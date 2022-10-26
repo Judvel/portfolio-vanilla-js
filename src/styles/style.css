@@ -1,0 +1,364 @@
+:root {
+  --background-color1: #ffffff;
+  --background-color2: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background-color1);
+
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+  }
+  header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+    }
+    
+    header h2 {
+      font-size: 1.5rem;
+    }
+    .header--center-index{
+      display: none;
+    }
+    
+    .header--left{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header--left .logo {
+      width: 20px;
+      height: 20px;
+    }
+    .header--right{
+      display: flex;
+    }
+  
+    
+
+.main-presentation-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.main-presentation-container {
+  padding: 10px;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.main-presentation-container h1 {
+  margin-bottom: 5px;
+}
+
+.main-presentation-container ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.main-aboutme-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background-color2);
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.main-aboutme-container div {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.main-aboutme-container h2 {
+  margin-bottom: 5px;
+}
+
+.main-skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 10px;
+}
+.main-skill-container .skill-title {
+  display: flex;
+}
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+
+  transition: all 0.25s;
+}
+
+.input-form:not(:placeholder-shown) + .input-label,
+.input-form:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-message-error {
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+.main-skill-container h2 {
+  margin-bottom: 5px;
+}
+
+.main-skill--tools-container {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 140px);
+}
+.tools-container {
+  text-align: center;
+}
+
+.tools-container img {
+  max-width: 110px;
+  height: 110px;
+}
+
+.main-works-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--background-color2);
+}
+
+h2 {
+  padding: 10px;
+  font-size: 2.1rem;
+  width: 100%;
+}
+.main-works--card {
+  max-width: 361px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main-works-container img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.main-works--links {
+  margin: 20px 0;
+}
+.main-works--links .links-repo {
+  padding: 10px;
+  border: 1px solid #2a7ae4;
+  color: #2a7ae4;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.main-works--links .links-deploy {
+  padding: 10px;
+  background-color: #2a7ae4;
+  color: white;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.main-education-container {
+  padding: 10px;
+}
+.main-education--platform-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.educational-platform {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+.educational-platform .logo {
+  margin-left: 10px;
+}
+/* .educational-platform .logo img {
+  width: 70%;
+  max-width: 600px;
+  justify-self: center;
+} */
+.main-form-container {
+  padding: 32px;
+  background-color: var(--background-color2);
+}
+
+.formulario {
+  margin-top: 2rem;
+}
+
+.form__label {
+  font-size: var(--font-size-form-fieldset);
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  font-weight: var(--font-weigth-input);
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.input {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+}
+
+.input::placeholder {
+  visibility: hidden;
+  color: #00000000;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+
+  transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+  color: var(--warning-color);
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: var(--warning-color);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color1);
+}
+
+@media (min-width: 768px) {
+  .main-presentation-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-presentation-container img {
+    width: 148px;
+    height: 148px;
+  }
+  .main-presentation-container div {
+    width: 524px;
+    margin-right: 20px;
+  }
+  .main-presentation-container div ul {
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  .main-aboutme-container h2,
+  .main-aboutme-container p {
+    width: 100%;
+  }
+  .main-skill-container h2,
+  .main-skill-container section {
+    width: 692px;
+  }
+  .main-skill--tools-container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1062px) {
+  .main-skill--tools-container {
+    grid-template-columns: repeat(7, 140px);
+  }
+}
+
+@media (min-width: 1440px) {
+    .header--center-index{
+      display: flex;
+    }
+    .header--center-index nav ul{
+      display: flex;
+      list-style: none;
+    
+    }
+    .header--center-index nav ul li{
+      margin-right: 20px;
+    }
+  }
