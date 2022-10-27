@@ -46,10 +46,10 @@
             ReactJS, Python
           </p>
           <ul>
-            <li>Github</li>
-            <li>Gmail</li>
-            <li>Linkedin</li>
-            <li>Curriculum</li>
+            <li><a href="https://github.com/Judvel">Github</a></li>
+            <li><a href="mailto:julio.diaz96@outlook.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/julio-diaz-ice/">Linkedin</a></li>
+            <li><a href="#">Curriculum</a></li>
           </ul>
         </div>
       </section>
@@ -116,77 +116,82 @@
 
       <section class="main-works-container">
         <h2 id="my-works">My works</h2>
-        <div class="main-works--card">
-          <img src="../src/assets/img/gamePage.png" alt="" />
-          <h3>Hangman Game</h3>
-          <p>HTML5, CSS3, JavaScript</p>
-          <div class="main-works--links">
-            <a class="links-repo" href="https://github.com/Judvel/Hangman-Game">
-              Repositorio
-            </a>
-            <a
-              class="links-deploy"
-              href="https://judvel.github.io/Hangman-Game/"
-            >
-              Ver Demo
-            </a>
+        <div class="main-works--card-container">
+          <div class="main-works--card">
+            <img src="../src/assets/img/gamePage.png" alt="" />
+            <h3>Hangman Game</h3>
+            <p>HTML5, CSS3, JavaScript</p>
+            <div class="main-works--links">
+              <a
+                class="links-repo"
+                href="https://github.com/Judvel/Hangman-Game"
+              >
+                Repositorio
+              </a>
+              <a
+                class="links-deploy"
+                href="https://judvel.github.io/Hangman-Game/"
+              >
+                Ver Demo
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="main-works--card">
-          <img src="../src/assets/img/merry-Chistmas-1920.png" alt="" />
-          <h3>How many days until christmas</h3>
-          <p>HTML5, CSS3, JavaScript</p>
-          <div class="main-works--links">
-            <a
-              class="links-repo"
-              href="https://github.com/Judvel/HowManyDaysUntilChristmas"
-            >
-              Repositorio
-            </a>
-            <a
-              class="links-deploy"
-              href="https://judvel.github.io/HowManyDaysUntilChristmas/"
-            >
-              Ver Demo
-            </a>
+          <div class="main-works--card">
+            <img src="../src/assets/img/merry-Chistmas-1920.png" alt="" />
+            <h3>How many days until christmas</h3>
+            <p>HTML5, CSS3, JavaScript</p>
+            <div class="main-works--links">
+              <a
+                class="links-repo"
+                href="https://github.com/Judvel/HowManyDaysUntilChristmas"
+              >
+                Repositorio
+              </a>
+              <a
+                class="links-deploy"
+                href="https://judvel.github.io/HowManyDaysUntilChristmas/"
+              >
+                Ver Demo
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="main-works--card">
-          <img src="../src/assets/img/Desktop-1980.png" alt="" />
-          <h3>Profile account Page</h3>
-          <p>HTML5, CSS3</p>
-          <div class="main-works--links">
-            <a
-              class="links-repo"
-              href="https://github.com/Judvel/JuanDC-Twitter-account-profile"
-            >
-              Repositorio
-            </a>
-            <a
-              class="links-deploy"
-              href="https://judvel.github.io/JuanDC-Twitter-account-profile/"
-            >
-              Ver Demo
-            </a>
+          <div class="main-works--card">
+            <img src="../src/assets/img/Desktop-1980.png" alt="" />
+            <h3>Profile account Page</h3>
+            <p>HTML5, CSS3</p>
+            <div class="main-works--links">
+              <a
+                class="links-repo"
+                href="https://github.com/Judvel/JuanDC-Twitter-account-profile"
+              >
+                Repositorio
+              </a>
+              <a
+                class="links-deploy"
+                href="https://judvel.github.io/JuanDC-Twitter-account-profile/"
+              >
+                Ver Demo
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="main-works--card">
-          <img src="../src/assets/img/homePageDesktop.png" alt="" />
-          <h3>Instagram Clone</h3>
-          <p>HTML5, CSS3</p>
-          <div class="main-works--links">
-            <a
-              class="links-repo"
-              href="https://github.com/Judvel/Instagram-Clone"
-            >
-              Repositorio
-            </a>
-            <a
-              class="links-deploy"
-              href="https://judvel.github.io/Instagram-Clone/"
-            >
-              Ver Demo
-            </a>
+          <div class="main-works--card">
+            <img src="../src/assets/img/homePageDesktop.png" alt="" />
+            <h3>Instagram Clone</h3>
+            <p>HTML5, CSS3</p>
+            <div class="main-works--links">
+              <a
+                class="links-repo"
+                href="https://github.com/Judvel/Instagram-Clone"
+              >
+                Repositorio
+              </a>
+              <a
+                class="links-deploy"
+                href="https://judvel.github.io/Instagram-Clone/"
+              >
+                Ver Demo
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -220,12 +225,9 @@
 
       <section class="main-form-container">
         <h2 id="contact">Contacto</h2>
-        <form
-          action="./registro_concluido.html"
-          class="formulario flex flex--column"
-        >
+        <form class="form--container">
           <fieldset>
-            <legend class="form__label">Información básica</legend>
+            <legend class="form--label">Información básica</legend>
             <div class="input-container">
               <input
                 name="name"
@@ -234,7 +236,7 @@
                 type="text"
                 placeholder="Nombre"
                 required
-                data-tipo="nombre"
+                data-tipo="name"
               />
               <label class="input-label" for="name">Nombre</label>
               <span class="input-message-error">Este campo no es valido</span>
@@ -259,18 +261,34 @@
                 class="input"
                 type="text"
                 placeholder="Asuntos"
+                pattern="[\s\S]{10,300}"
                 required
                 data-tipo="business"
               />
               <label class="input-label" for="name">Asuntos</label>
               <span class="input-message-error">Este campo no es valido</span>
             </div>
+            <div class="input-container">
+              <textarea
+                name="message"
+                id="message"
+                class="input input--message"
+                pattern="[\s\S]{10,40}"
+                maxlength="300"
+                placeholder="mensaje"
+                required
+                data-tipo="message"
+              ></textarea>
+              <label class="input-label" for="message">Mensaje</label>
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
           </fieldset>
 
-          <button class="button">Registrar</button>
+          <button class="form--button">Enviar Mensaje</button>
         </form>
       </section>
     </main>
     <footer>Desarrollado por Julio Diaz - 2022</footer>
+    <script src="../src/js/app.js" type="module"></script>
   </body>
 </html>
