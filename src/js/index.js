@@ -13,19 +13,19 @@ const typeOfError = ["valueMissing", "typeMismatch", "patternMismatch"]
 
 const errorMessage = {
     name: {
-        valueMissing: "Este campo no puede estar vacio"
+        valueMissing: "This field can not be empty"
     },
     email: {
-        valueMissing: "Este campo no puede estar vacio",
-        typeMismatch: "El correo no es valido"
+        valueMissing: "This field can not be empty",
+        typeMismatch: "This email is not valid"
     },
     business: {
-        valueMissing: "Este campo no puede estar vacio",
-        patternMismatch: "Al menos 6 a 12 caracteres"
+        valueMissing: "This field can not be empty",
+        patternMismatch: "At least 6 to 12 characteres"
     },
     message: {
-        valueMissing: "Este campo no puede estar vacio",
-        patternMismatch: "Maximo 300 caracteres"
+        valueMissing: "This field can not be empty",
+        patternMismatch: "Max 300 characteres"
     }
 
 }
